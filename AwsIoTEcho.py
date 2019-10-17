@@ -16,7 +16,7 @@ def customCallback(client, userdata, message):
 myMQTTClient = AWSIoTMQTTClient("Chris_Macbook")
 myMQTTClient.configureEndpoint("a1g9fizbnjxy2u.iot.us-west-2.amazonaws.com", 443)
 myMQTTClient.configureCredentials("/Users/yuxuanwu/Desktop/IoT/Amazon_Root_CA_1.pem", "/Users/yuxuanwu/Desktop/IoT/cf09431bee-private.pem.key", "/Users/yuxuanwu/Desktop/IoT/cf09431bee-certificate.pem.crt")
-# For Websocket, we only need to configure th
+# For Websocket, we only need to configure
 myMQTTClient.configureOfflinePublishQueueing(-1)  # Infinite offline Publish queueing
 myMQTTClient.configureDrainingFrequency(2)  # Draining: 2 Hz
 myMQTTClient.configureConnectDisconnectTimeout(10)  # 10 sec
